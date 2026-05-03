@@ -30,8 +30,8 @@ npm install
 Create .env file:
 
 text
-MONGO_URI=your_mongodb_url
-JWT_SECRET=anything_here
+MONGO_URI=mongodb+srv://MansiBakshi:021203@cluster0.wg3ulgb.mongodb.net/
+JWT_SECRET=mansi_super_secret_key_2026
 PORT=5001
 Run:
 
