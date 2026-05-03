@@ -1,0 +1,98 @@
+.signup-container{
+  max-width: 400px;
+  margin: 8% auto;
+}
+
+.welcumMsgSign{
+  margin-bottom: 8%;
+  text-align: center;
+  font-size: 160%;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.signup-card{
+  background: white;
+  border-radius: 18px;
+  padding: 45px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.signup-title{
+  text-align: center;
+  margin-bottom: 35px;
+  color: rgb(22, 16, 27);
+  font-size: 38px;
+}
+
+.signup-error{
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  font-size: 16px;
+}
+
+.signup-form .form-group{
+  margin-bottom: 20px;
+}
+
+.signup-form .form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #333;
+}
+
+.signup-form .form-group input{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 15px;
+  transition: border-color 0.2s;
+}
+
+.signup-form .form-group input:focus{
+  outline: none;
+  border-color: #27ae60;
+}
+
+.signup-btn{
+  width: 100%;
+  padding: 12px;
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.signup-btn:hover{
+  background-color: #219a52;
+}
+
+.signup-btn:disabled{
+  background-color: #95a5a6;
+  cursor: not-allowed;
+}
+
+.signup-footer{
+  text-align: center;
+  margin-top: 20px;
+  color: #7f8c8d;
+}
+
+.signup-footer a{
+  color: #27ae60;
+  text-decoration: none;
+}
+
+.signup-footer a:hover{
+  text-decoration: underline;
+}
+

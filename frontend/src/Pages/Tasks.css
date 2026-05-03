@@ -1,0 +1,122 @@
+.tasks-container {
+  padding: 10px;
+  max-width: 80em;
+  margin: 0 auto;
+}
+.back-btn {
+  background-color: #7f8c8d;
+  color: white;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 18px;
+  cursor: pointer;
+  margin-bottom: 19px;
+  font-size: 20px;
+}
+.back-btn:hover {
+  background-color: #6c7a7a;
+}
+.tasks-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.tasks-header h1 {
+  font-size: 32px;
+  color: #2c3e50;
+}
+.new-task-btn {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.new-task-btn:hover {
+  background-color: #2980b9;
+}
+.task-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+.task-table th {
+  background-color: #34495e;
+  color: white;
+  padding: 15px 12px;
+  text-align: left;
+  font-weight: 500;
+}
+.task-table td {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+}
+.task-table tr:hover {
+  background-color: #f9f9f9;
+}
+.status-todo {
+  background-color: #f39c12;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  display: inline-block;
+  color: white;
+}
+.status-progress {
+  background-color: #3498db;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  display: inline-block;
+  color: white;
+}
+.status-done {
+  background-color: #27ae60;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  display: inline-block;
+  color: white;
+}
+.priority-high {
+  color: #e74c3c;
+  font-weight: bold;
+}
+.priority-medium {
+  color: #f39c12;
+  font-weight: bold;
+}
+.priority-low {
+  color: #27ae60;
+  font-weight: bold;
+}
+.status-select {
+  padding: 6px 10px;
+  font-size: 12px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  background-color: white;
+  cursor: pointer;
+}
+.status-select:focus {
+  outline: none;
+  border-color: #3498db;
+}
+.empty-tasks {
+  text-align: center;
+  margin-top: 50px;
+  color: #7f8c8d;
+  font-size: 18px;
+  padding: 50px;
+  background: white;
+  border-radius: 12px;
+}
+.tasks-modal .modal-content {
+  max-width: 550px;
+}

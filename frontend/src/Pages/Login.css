@@ -1,0 +1,82 @@
+.login-container {
+  max-width: 400px;
+  margin: 10% auto;
+}
+.welcumMsg{
+  margin-bottom: 10%;
+  text-align: center;
+  font-size: 170%;
+  font-weight: 600;
+  text-decoration-color: brown;
+}
+
+.login-card {
+  background: white;
+  border-radius: 18px;
+  padding: 50px;
+}
+
+.login-title {
+  text-align: center;
+  margin-bottom: 35px;
+  color: rgb(22, 16, 27);
+  font-size: 40px;
+}
+
+.login-error {
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  font-size: 16px;
+}
+
+.login-form .form-group {
+  margin-bottom: 20px;
+}
+
+.login-form .form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #333;
+}
+
+.login-form .form-group input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 15px;
+  transition: border-color 0.2s;
+}
+
+
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.login-footer {
+  text-align: center;
+  margin-top: 20px;
+  color: #7f8c8d;
+}
+
+.login-footer a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+.login-footer a:hover {
+  text-decoration: underline;
+}
