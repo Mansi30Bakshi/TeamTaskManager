@@ -28,7 +28,7 @@ function Tasks() {
   const fetchTasks = async () => {
     try {
       const token = localStorage.getItem('token');
-      const response = await axios.get(`http://localhost:5001/api/tasks/project/${projectId}`, {
+      const response = await axios.get(`https://teamtaskmanager-production-6c07.up.railway.app/api/tasks/project/${projectId}`, {
         headers: { Authorization: `Bearer ${token}` }
       });
       setTasks(response.data);
@@ -40,7 +40,7 @@ function Tasks() {
   const fetchProject = async () => {
     try {
       const token = localStorage.getItem('token');
-      const response = await axios.get(`http://localhost:5001/api/projects/${projectId}`, {
+      const response = await axios.get(`https://teamtaskmanager-production-6c07.up.railway.app/api/projects/${projectId}`, {
         headers: { Authorization: `Bearer ${token}` }
       });
       setProject(response.data);
@@ -52,7 +52,7 @@ function Tasks() {
   const fetchMembers = async () => {
     try {
       const token = localStorage.getItem('token');
-      const response = await axios.get(`http://localhost:5001/api/projects/${projectId}/members`, {
+      const response = await axios.get(`https://teamtaskmanager-production-6c07.up.railway.app/api/projects/${projectId}/members`, {
         headers: { Authorization: `Bearer ${token}` }
       });
       setMembers(response.data);
@@ -67,7 +67,7 @@ function Tasks() {
     e.preventDefault();
     try {
       const token = localStorage.getItem('token');
-      await axios.post('http://localhost:5001/api/tasks',
+      await axios.post('https://teamtaskmanager-production-6c07.up.railway.app/api/tasks',
         { title, description, dueDate, priority, projectId, assignedTo },
         { headers: { Authorization: `Bearer ${token}` } }
       );
@@ -86,7 +86,7 @@ function Tasks() {
   const updateStatus = async (taskId, newStatus) => {
     try {
       const token = localStorage.getItem('token');
-      await axios.put(`http://localhost:5001/api/tasks/${taskId}`,
+      await axios.put(`https://teamtaskmanager-production-6c07.up.railway.app/api/tasks/${taskId}`,
         { status: newStatus },
         { headers: { Authorization: `Bearer ${token}` } }
       );

@@ -24,7 +24,7 @@ function Projects() {
   const fetchProjects = async () => {
     try {
       const token = localStorage.getItem('token');
-      const response = await axios.get('http://localhost:5001/api/projects', {
+      const response = await axios.get('https://teamtaskmanager-production-6c07.up.railway.app/api/projects', {
         headers: { Authorization: `Bearer ${token}` }
       });
       setProjects(response.data);
@@ -39,7 +39,7 @@ function Projects() {
     e.preventDefault();
     try {
       const token = localStorage.getItem('token');
-      await axios.post('http://localhost:5001/api/projects', 
+      await axios.post('https://teamtaskmanager-production-6c07.up.railway.app/api/projects', 
         { name, description },
         { headers: { Authorization: `Bearer ${token}` } }
       );
@@ -56,7 +56,7 @@ function Projects() {
     e.preventDefault();
     try {
       const token = localStorage.getItem('token');
-      await axios.post(`http://localhost:5001/api/projects/${selectedProject._id}/members`,
+      await axios.post(`https://teamtaskmanager-production-6c07.up.railway.app/api/projects/${selectedProject._id}/members`,
         { email: memberEmail, role: memberRole },
         { headers: { Authorization: `Bearer ${token}` } }
       );
@@ -72,7 +72,7 @@ function Projects() {
   const viewMembers = async (project) => {
     try {
       const token = localStorage.getItem('token');
-      const response = await axios.get(`http://localhost:5001/api/projects/${project._id}/members`, {
+      const response = await axios.get(`https://teamtaskmanager-production-6c07.up.railway.app/api/projects/${project._id}/members`, {
         headers: { Authorization: `Bearer ${token}` }
       });
       setMembers(response.data);

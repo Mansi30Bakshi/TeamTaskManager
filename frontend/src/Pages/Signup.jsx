@@ -17,7 +17,7 @@ function Signup() {
     setLoading(true);
 
     try {
-      const response = await axios.post('http://localhost:5001/api/auth/signup',{
+      const response = await axios.post('https://teamtaskmanager-production-6c07.up.railway.app/api/auth/signup',{
         name,
         email,
         password

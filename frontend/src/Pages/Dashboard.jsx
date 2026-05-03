@@ -16,7 +16,7 @@ function Dashboard() {
   const fetchDashboard = async () => {
     try {
       const token = localStorage.getItem('token');
-      const response = await axios.get('http://localhost:5001/api/dashboard', {
+      const response = await axios.get('https://teamtaskmanager-production-6c07.up.railway.app/api/dashboard', {
         headers: { Authorization: `Bearer ${token}` }
       });
       setDashboard(response.data);
